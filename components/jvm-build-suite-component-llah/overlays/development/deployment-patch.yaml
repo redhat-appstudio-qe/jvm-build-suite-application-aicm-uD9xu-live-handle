@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-llah
+  namespace: jvm-build-sxuh-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:1be4b602f05fdf7d9013646255cc21ccc76575a2903f8b4e21f70de94245f1b6
+        name: container-image
+        resources: {}
+status: {}
